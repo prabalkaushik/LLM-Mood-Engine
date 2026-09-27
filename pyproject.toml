@@ -1,0 +1,28 @@
+[project]
+name = "affective-mcp-engine"
+version = "0.1.0"
+description = "Affective Subcortical Engine & Episodic Cognitive Middleware (Phase 1)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0,<2.0.0",
+    "fastmcp>=0.1.0",
+    "redis>=5.0.0",
+    "qdrant-client>=1.10.0",
+    "fastembed>=0.3.0",
+    "pydantic>=2.7.0",
+    "pydantic-settings>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["config", "core", "mcp_server"]

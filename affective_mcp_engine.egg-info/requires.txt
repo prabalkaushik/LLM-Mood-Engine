@@ -1,0 +1,11 @@
+mcp<2.0.0,>=1.0.0
+fastmcp>=0.1.0
+redis>=5.0.0
+qdrant-client>=1.10.0
+fastembed>=0.3.0
+pydantic>=2.7.0
+pydantic-settings>=2.0.0
+
+[dev]
+pytest>=8.0.0
+pytest-asyncio
